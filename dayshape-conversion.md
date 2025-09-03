@@ -1,4 +1,4 @@
-# TAX Preparer Projects – Flow Diagram (Corrected Demand Step)
+# TAX Preparer Projects – Flow Diagram (Cutover Step Finalized)
 
 ```mermaid
 graph TD
@@ -31,7 +31,7 @@ graph TD
 
     %% Integration Back to Workday
     E1 -->|Integration DS Packaged| F1["Upsert RPL Lines Back to Workday (2025 Jul–Dec)"]
-    F1 --> G1["Delete and Replace Forecast in Workday With DS Forecast (Cutover)"]
+    F1 --> G1["Delete and Replace Forecast in Workday With DS Forecast (Cutover) – For 2025 Projects, ONLY Nov and Dec Forecasts Will Exist"]
 
     E2 -->|Integration DS Packaged| F2["Upsert RPL Lines Back to Workday (2026 Jan–Dec)"]
-    F2 --> G2["Delete and Replace Forecast in Workday With DS Forecast (Cutover)"]
+    F2 --> G2["Delete and Replace Forecast in Workday With DS Forecast (Cutover) – For 2026 Projects, Full Year Forecasts Will Exist"]
